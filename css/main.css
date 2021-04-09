@@ -6,6 +6,63 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
+/* #app{
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+/* UTILITIES */
+
+/* Menù */
+
+.header-menu{
+    display: flex;
+    align-items: center;
+}
+
+.header-menu li{
+    list-style:none;
+}
+
+.header-menu li a{
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size:14px;
+}
+
+
+
+
+
+/* LAYOUT */
+
+/* HEADER */
+
+.app-header{
+    display: flex;
+    padding: 20px 20px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content:center;
+    background-color: #ccc;
+}
+
+.app-header .logo{
+    width: 10%;
+    text-align: center;
+}
+
+.app-header .nav{
+
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 
