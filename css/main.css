@@ -8,11 +8,14 @@
 body{
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    padding-top: 90px;
 }
 
 
 
 /* UTILITIES */
+
+
 
 .container{
     max-width: 1270px;
@@ -49,6 +52,8 @@ body{
 }
 
 .dropdown-menu{
+    /* display gestito con Jquery */
+    display: none; 
     position: absolute;
     padding: 1.5rem 1.5rem;
     top: 45px;
@@ -78,9 +83,12 @@ body{
 }
 
 .drop-window{
+    
+    /* Display gestito con Jquery */
+    /* display: flex; */
+    display: none; 
     width: 750px;
     position: absolute;
-    display: flex;
     justify-content: space-between;
     padding: 1.5rem 2rem;
     background-color:#fff;
@@ -110,7 +118,7 @@ body{
 
 
 .drop-window .menu-list li{
-    margin-top: 1rem;
+    margin-top: 2rem;
 
 }
 
@@ -142,10 +150,17 @@ body{
 
 /* HEADER */
 
+.app-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .app-header .container{
+    background-color:#fff;
     display: flex;
     align-items: center;
-    height: 120px;
+    height: 90px;
 }
 
 .app-header .container .logo{
@@ -179,6 +194,13 @@ body{
     font-size: 11px;
     color: #ced5db;
     font-weight: 500;
+}
+
+
+/* MAIN */
+main .container{
+    background-color:#ccc;
+    height: 800px;
 }
 
 
