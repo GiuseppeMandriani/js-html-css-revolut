@@ -6,6 +6,7 @@
 }
 
 body{
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -28,7 +29,7 @@ body{
 
 .header-menu li{
     list-style:none;
-    margin-right: 3rem;
+    margin-right: 2rem;
 }
 
 .header-menu li:last-child{
@@ -39,6 +40,54 @@ body{
     text-decoration:none;
     font-size: 16px;
     color: #8c8e8f;
+}
+
+/* Dropdown-menu */
+
+.header-menu li.with-dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    padding: 1.5rem 1.5rem;
+    top: 45px;
+    left: 0;
+    background-color:#fff;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,.2));
+    border-radius:5px;
+}
+
+.dropdown-menu li{
+    margin-bottom: 1rem;
+}
+
+.dropdown-menu li:last-child{
+    margin-bottom: 0;
+}
+
+.dropdown-menu::before{
+    content: "";
+    
+}
+
+
+/* Buttons */
+
+.btn{
+    /* min-width: 150px; */
+    padding: 15px 15px;
+    background-color: #f0f0f0;
+    border-radius:10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn.get{
+    color: #fff;
+    background-color:#191c1f;
 }
 
 
