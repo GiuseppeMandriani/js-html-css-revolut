@@ -77,6 +77,33 @@ body{
 
 }
 
+.drop-window{
+    width: 750px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    background-color:#fff;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,.2));
+    border-radius:5px;
+}
+
+/* .drop-window .box{
+    flex-basis: calc(100% / 4);
+    margin: 0 15px;
+} */
+
+
+
+.drop-window .menu-list li{
+    margin-bottom: 1rem;
+
+}
+
+.drop-window .menu-list li:last-child{
+    margin-bottom: 0;
+}
+
 
 /* Buttons */
 
