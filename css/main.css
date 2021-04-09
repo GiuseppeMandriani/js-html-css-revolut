@@ -52,7 +52,7 @@ body{
     position: absolute;
     padding: 1.5rem 1.5rem;
     top: 45px;
-    left: 0;
+    right: -110px;
     background-color:#fff;
     filter: drop-shadow(0 0 5px rgba(0,0,0,.2));
     border-radius:5px;
@@ -68,7 +68,13 @@ body{
 
 .dropdown-menu::before{
     content: "";
-    
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -8px;
+    background-color:#fff;
+    transform: rotate(45deg);
+
 }
 
 
