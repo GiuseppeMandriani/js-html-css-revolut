@@ -13,6 +13,8 @@ var dropLink = dropDown.find('a');
 
 var dropMenu = dropDown.children('.dropdown-menu');
 
+var dropWindow = dropDown.find('.drop-show');
+
 
 // Click per sottomenù associato
 
@@ -31,6 +33,7 @@ dropLink.click(function(){
 
      // Reset
      dropMenu.not(actualMenu).hide();
+     dropWindow.not(actualMenu).hide();
      actualMenu.toggle();
 
 

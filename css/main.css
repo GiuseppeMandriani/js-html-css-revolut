@@ -14,6 +14,10 @@ body{
 
 /* UTILITIES */
 
+.oth-device{
+    display: none;
+}
+
 /* Buttons */
 
 .btn{
@@ -240,6 +244,25 @@ body{
 .app-header .nav-right button.btn.get:hover{
     color: #fff;
     background-color: rgba(0,0,0,.5)
+}
+
+
+@media screen and (max-width: 780px){
+    .nav-left,
+    .nav-right{
+        display: none;
+    }
+
+    .oth-device{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+
+
 }
 
 
