@@ -13,27 +13,39 @@ var dropLink = dropDown.find('a');
 
 var dropMenu = dropDown.children('.dropdown-menu');
 
-var dropWindow= dropDown.children('.show');
 
 // Click per sottomenù associato
 
 
-dropLink.click(function(){
+ dropLink.click(function(){
     
-    console.log($(this));
+     console.log($(this));
 
-    // Metodo a
+     // Metodo a
 
-    // $(this).next().toggle();
+     // $(this).next().toggle();
 
-    // Metodo b
+     // Metodo b Utilizzare sempre questo
 
     var actualMenu = $(this).next();
 
+    // Reset
     dropMenu.not(actualMenu).hide();
-    dropWindow.not(actualMenu).hide();
     actualMenu.toggle();
+
+
+
 })
+
+// // Hover per sottomenù mouseenter/mouseleave
+
+
+// dropDown.hover(function(){
+//     $(this).children('.dropdown-menu').toggle();
+//     $(this).children('.show').toggle();
+
+
+// })
 
 
 
