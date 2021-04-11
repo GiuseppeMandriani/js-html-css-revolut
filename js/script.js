@@ -17,21 +17,21 @@ var dropMenu = dropDown.children('.dropdown-menu');
 // Click per sottomenù associato
 
 
- dropLink.click(function(){
+dropLink.click(function(){
     
-     console.log($(this));
+//      console.log($(this));
 
-     // Metodo a
+//      // Metodo a
 
-     // $(this).next().toggle();
+//      // $(this).next().toggle();
 
-     // Metodo b Utilizzare sempre questo
+//      // Metodo b Utilizzare sempre questo
 
-    var actualMenu = $(this).next();
+     var actualMenu = $(this).next();
 
-    // Reset
-    dropMenu.not(actualMenu).hide();
-    actualMenu.toggle();
+     // Reset
+     dropMenu.not(actualMenu).hide();
+     actualMenu.toggle();
 
 
 
@@ -42,7 +42,7 @@ var dropMenu = dropDown.children('.dropdown-menu');
 
 // dropDown.hover(function(){
 //     $(this).children('.dropdown-menu').toggle();
-//     $(this).children('.show').toggle();
+//     $(this).children('.drop-show').toggle();
 
 
 // })
