@@ -8,14 +8,16 @@
 body{
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    padding-top: 90px;
 }
 
 
 
 /* UTILITIES */
 
-.oth-device{
-    display: none;
+.container{
+    max-width: 1270px;
+    margin: 0 auto;
 }
 
 /* Buttons */
@@ -41,15 +43,25 @@ body{
 
 /* LAYOUT */
 #app{
-    max-width: 1270px;
-    margin: 0 auto;
+    position: relative;
 }
+
 
 /* HEADER */
 
-.app-header{
+.app-header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+
+
+.app-header .container{
     display: flex;
     height: 90px;
+    background-color: #fff;
 }
 
 
@@ -57,7 +69,7 @@ body{
 
 /* Nav-left */
 .nav-left{
-    /* flex-grow: 1; */
+    flex-grow: 1;
     display: flex;
     align-items: center;
 }
@@ -247,19 +259,15 @@ body{
 }
 
 
-@media screen and (max-width: 780px){
-    .nav-left,
-    .nav-right{
-        display: none;
-    }
+/* MAIN */
 
-    .oth-device{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0 1rem;
-    }
+main .container{
+    height: 800px;background-color: #ccc;
+}
+
+
+@media screen and (max-width: 780px){
+
 
 
 
